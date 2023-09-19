@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>salad</title>
+
+    <style>
+         *{
+        padding: 0;
+        margin: 0;
+        /*box-sizing: border-box*/;
+    }
+    
+    .main{
+        background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url("./images/top-view-homemade-delicious-salad-with-many-ingredients-plate-black-green-mix-colors-background.jpg");
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .navbar{
+        width: 1200px;
+        height: 75px;
+        margin: auto;
+    }
+    
+    .icon{
+        width: 200px;
+        height: 70px;
+        float: left;
+    }
+    
+    .logo{
+        color: #fff;
+        float: left;
+        font-size: 30px;
+        padding-top: 10px;
+        padding-left: 20px;
+        font-family: arial;
+    }
+    
+    .menu{
+        width: 700px;
+        height: 70px;
+        float: left;
+    }
+    
+    ul{
+        justify-content: center;
+        align-items: center;
+        float: left;
+        display: flex;
+    }
+    
+    ul li{
+        list-style: none;
+        margin-top: 27px;
+        margin-left: 62px;
+    }
+    
+    ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-family: arial;
+        transition: .4s ease-in-out;
+    }
+    
+    ul li a:hover{
+        color: #ff7200;
+    }
+    
+    .content{
+        width: 1200px;
+        height: auto;
+        color: #fff;
+        font-family: 'Times New Roman', Times;
+        font-size: 60px;
+        padding-top: 80px;
+        text-align: center;
+    }
+    
+    .content .vbt{
+       margin-top: 10px;
+       margin-left: 550px;
+       background: transparent;
+       border-radius: 5px;
+       border: 1px solid #ff7200;
+       font-size: 25px;
+       padding: 10px;
+    }
+    
+    .content .vbt a{
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .search{
+        width: 300px;
+        float: left;
+    }
+    
+    .srch{
+        margin-top: 13px;
+        background: transparent;
+        width: 200px;
+        height: 40px;
+        border: 1px solid #ff7200;
+        border-right: none;
+        font-family: 'Times New Roman', Times;
+        font-size: 15px;
+        color: #fff;
+        padding: 10px;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        float: left;
+    }
+    
+    .btn{
+        width: 60px;
+        height: 40px;
+        background: #ff7200;
+        border: 2px solid #ff7200;
+        margin-top: 13px;
+        border-bottom-right-radius: 5px;
+        color: #fff;
+        font-size: 12px;
+    }
+
+    .aud{
+        margin-top: 100px;
+        margin-left: 450px;
+    }
+
+    .eat{
+        margin-top: 50px;
+        align-items: center;
+        font-family: 'Times New Roman', Times;
+        text-align: center;
+        font-size: 60px;
+        /* margin-bottom: 50px; */
+    }
+
+    .aud-cap{
+        margin-left: 500px;
+        margin-bottom: 100px;
+    }
+    </style>
+   
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h3 class="logo">EaT</h3>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="dessert.html">DESSERT</a></li>
+                    <li><a href="salad.html">SALAD</a></li>
+                    <li><a href="pizza.html">PIZZA</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" placeholder="type to search">
+                <a href="#"><button class="btn">search</button></a>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>OUR SALAD</h1>
+
+            <ul>
+                <button class="vbt"><a href="#">VIDEOS</a></button>
+            </ul>
+        </div>
+    </div>
+
+    <section>
+
+        <div class="eat">
+            <h2>Eat the best salad from EaT</h2>
+        </div>
+        <audio controls class="aud">
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="./images/elevator-music-lofi-version-30s-10822.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+          <figcaption class="aud-cap">elevator music</figcaption>
+
+          <audio controls class="aud">
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="./images/world-news-30s-153711.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+          <figcaption class="aud-cap">world news audio</figcaption>
+    </section>
+</body>
+<a style="margin-top: 100px;" href="home.html">Visit home page</a>
+</html>
